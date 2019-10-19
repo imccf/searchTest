@@ -17,12 +17,12 @@ public class AdapterRecyclerViewSearchResult
 
   public static final String TAG = "AdapterRecyclerViewSearchResult";
   List<SearchResultBean.BusinessesBean> list;
-  IContracts.IView mallView;
+  IContracts.IView iView;
   private Context context;
 
-  public AdapterRecyclerViewSearchResult(Context context, IContracts.IView mallView) {
+  public AdapterRecyclerViewSearchResult(Context context, IContracts.IView iView) {
     this.context = context;
-    this.mallView = mallView;
+    this.iView = iView;
   }
 
   public void setData(List<SearchResultBean.BusinessesBean> businessesBeanList) {
